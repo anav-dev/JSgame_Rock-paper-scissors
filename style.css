@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: #455d7a;
+  font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+}
+h1,
+h2,
+.game-instructions {
+  margin: 0.5%;
+}
+.container {
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 5px solid #233142;
+  box-shadow: 5px 5px 5px lightslategray;
+  align-items: center;
+  margin: 30px;
+  padding: 3%;
+}
+.container-button {
+  position: relative;
+  width: 50%;
+  background-color: #f95959;
+  margin: 5%;
+}
+
+/* Make the image responsive */
+.container-button img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 27%;
+  padding: 10px;
+  background-color: #455d7a;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container-button .btn {
+  position: absolute;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #455d7a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 8%;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 23%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
